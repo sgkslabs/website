@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExpenseDiary Privacy Policy — SGKS Labs</title>
+<meta name="description" content="Privacy Policy for ExpenseDiary, the on-device expense and income tracking Android app by SGKS Labs.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="../index.html#top" class="brand">
+      <span class="brand-glyph">&gt;_</span>
+      <span class="brand-text">sgkslabs<span class="dot">.</span>in</span>
+    </a>
+    <nav class="nav">
+      <a href="../index.html#apps">apps</a>
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="policy-hero wrap">
+    <a href="../index.html#apps" class="policy-back">&larr; back to sgkslabs.in</a>
+    <span class="app-tag">android · expense &amp; income tracking</span>
+    <h1>ExpenseDiary — Privacy Policy</h1>
+    <p class="policy-meta">
+      <span>Effective: September 2, 2026</span>
+      <span>Publisher: SGKSLabs</span>
+      <span>Contact: sgkslabs@gmail.com</span>
+    </p>
+  </section>
+
+  <article class="policy-doc">
+
+    <h2>Summary</h2>
+    <p>ExpenseDiary is built to work entirely on your device. Your transactions, categories, and reminders live in a local database on your phone — nothing is sent to us, because we don't run a server that stores your financial data at all.</p>
+    <p>Your entries never leave your device unless you turn on Google Drive backup yourself. If you do, the file goes to a hidden, private folder in your own Google Drive — not to SGKSLabs.</p>
+    <p>The only accounts involved are yours: your Google Account (if you sign in) and Google's own services (Drive, Play Billing, AdMob). We don't operate any backend that receives your data.</p>
+    <p>The rest of this document explains exactly what's stored, when, and how to remove it.</p>
+
+    <h2>01 What we collect</h2>
+    <p>Everything you enter into ExpenseDiary — expense and income entries, custom categories, bill reminders, and your display preferences (currency, date format, theme) — is written to a local SQLite database on your device using Android's Room library. We do not transmit this data anywhere unless you explicitly enable Drive backup.</p>
+    <ul>
+      <li>Transactions, categories, reminders — stored on-device, visible only to you</li>
+      <li>App settings (currency, theme, date format) — stored on-device, visible only to you</li>
+      <li>Profile photo you add locally — stored on-device, visible only to you</li>
+    </ul>
+
+    <h2>02 Your Google Account</h2>
+    <p>Signing in is optional. If you choose to sign in with Google, we request your name, email address, and profile photo through Android's Credential Manager, and store that information in the same local database as everything else — again, on your device, not on a server we control.</p>
+    <p>Signing in unlocks two things: a name/email/photo on your Profile tab, and the option to back up to Google Drive. It does not send your transactions anywhere by itself.</p>
+
+    <h2>03 Drive backup, if you turn it on</h2>
+    <p>When you enable Drive backup, ExpenseDiary requests access to a single, restricted scope: drive.appdata. This is a hidden folder that:</p>
+    <ul>
+      <li>Isn't visible in your regular Google Drive file list</li>
+      <li>Can only be read or written by ExpenseDiary — no other app can see it</li>
+      <li>Is deleted automatically if you uninstall the app</li>
+    </ul>
+    <p>Into that folder, we write one file — expense_diary_backup.json — containing your transactions, categories, reminders, and profile settings, so you can restore them on a new device. This happens when you tap "Sync now," automatically when you background the app after making changes, or when you restore on a fresh install. We do not read, analyze, or access this file ourselves; it sits in your Drive, governed by your Google Account.</p>
+
+    <h2>04 Local export &amp; import</h2>
+    <p>As an offline alternative to Drive, you can export the same JSON backup to any location you choose on your device (or a connected cloud drive app) using Android's file picker, and import it back later. We're not involved in this transfer at all — it's a file operation between your device and wherever you choose to save it.</p>
+
+    <h2>05 Advertising &amp; purchases</h2>
+    <p>Free-tier use of ExpenseDiary includes ads served by Google AdMob. AdMob may collect device and advertising identifiers to serve and measure ads, governed by Google's own Privacy Policy (policies.google.com/privacy). Purchasing "Go Premium" removes ads and is processed entirely by Google Play Billing — we never see or store your payment details; Google's payments privacy notice covers that transaction.</p>
+
+    <h2>06 Sharing &amp; third parties</h2>
+    <p>We don't sell your data, and we don't have a backend server to share it from. The only parties that ever touch your information are services you've already chosen to use:</p>
+    <ul>
+      <li>Google Sign-In &amp; Drive — only if you sign in, acting on your behalf, under your Google Account</li>
+      <li>Google AdMob — for ad delivery, on the free tier only</li>
+      <li>Google Play Billing — only if you purchase Premium</li>
+    </ul>
+    <p>No analytics SDK, no advertising network beyond AdMob, and no data broker is otherwise involved.</p>
+
+    <h2>07 Retention &amp; how to delete your data</h2>
+    <p>Your data stays on your device for as long as the app is installed. You're in full control of removing it:</p>
+    <ul>
+      <li>Reset App (Profile &gt; Settings) permanently deletes every transaction, reminder, and custom category on your device</li>
+      <li>Uninstalling the app removes the local database entirely</li>
+      <li>Deleting the Drive backup — signing out and back in, or revoking ExpenseDiary's access at myaccount.google.com/permissions, removes its access to your hidden app-data folder</li>
+    </ul>
+
+    <h2>08 Children's privacy</h2>
+    <p>ExpenseDiary is not directed at children under 13, and we do not knowingly collect information from them. If you believe a child has provided us information through the app, contact us and we'll remove it.</p>
+
+    <h2>09 Changes to this policy</h2>
+    <p>If this policy changes, we'll update the effective date at the top of this page. Material changes will be reflected here before they take effect — there's no separate mailing list, since we don't collect an email address to send one to unless you sign in.</p>
+
+    <h2>10 Contact</h2>
+    <p>Questions about this policy or your data can be sent to sgkslabs@gmail.com, or through the "Email Us" link on the app's Profile tab.</p>
+
+    <p class="policy-source">
+      Mirrored on sgkslabs.in for convenience. The canonical, always-current version of this policy is hosted at
+      <a href="https://sites.google.com/view/expensediary-privacypolicy/home" target="_blank" rel="noopener noreferrer">sites.google.com/view/expensediary-privacypolicy</a>.
+    </p>
+
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> SGKS Labs</span>
+    <span class="footer-sep">·</span>
+    <span>sgkslabs.in</span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

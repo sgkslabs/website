@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CalorieLogger Privacy Policy — SGKS Labs</title>
+<meta name="description" content="Privacy Policy for CalorieLogger, the on-device calorie and macro tracking Android app by SGKS Labs.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="../index.html#top" class="brand">
+      <span class="brand-glyph">&gt;_</span>
+      <span class="brand-text">sgkslabs<span class="dot">.</span>in</span>
+    </a>
+    <nav class="nav">
+      <a href="../index.html#apps">apps</a>
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="policy-hero wrap">
+    <a href="../index.html#apps" class="policy-back">&larr; back to sgkslabs.in</a>
+    <span class="app-tag">android · nutrition tracking</span>
+    <h1>CalorieLogger — Privacy Policy</h1>
+    <p class="policy-meta">
+      <span>Last updated: 22 August 2026</span>
+      <span>Developer: SGKS Labs</span>
+      <span>Contact: sgkslabs@gmail.com</span>
+      <span>Package: com.sgkslabs.calorielogger</span>
+    </p>
+  </section>
+
+  <article class="policy-doc">
+
+    <h2>1. Summary (Plain Language)</h2>
+    <p>CalorieLogger is designed to be local-first and private by default:</p>
+    <ul>
+      <li>Your food diary, weight history, water log, supplement log, profile details, and goals are stored only on your own device, in a local database. We do not operate a server or cloud database, and we never see this information.</li>
+      <li>The app shows ads and offers an optional one-time "Remove Ads" purchase, both of which involve standard Google services (see Section 5).</li>
+      <li>If you use the optional barcode scanner, only the scanned barcode number is sent to a public nutrition database to look up product information — nothing else about you is sent with it.</li>
+      <li>We do not sell your data, and we do not share your health or food-logging data with advertisers or any other third party.</li>
+    </ul>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Information You Provide Directly</h3>
+    <p>When you set up your profile and goals, you may enter:</p>
+    <ul>
+      <li>Name, height, weight, age, and sex</li>
+      <li>A profile photo (stored locally at filesDir/profile_photo.jpg on your device, downscaled before storage)</li>
+      <li>Weight goal, target weight, weekly rate, activity level, and goal type</li>
+      <li>Nutrition targets (calorie and macronutrient goals)</li>
+      <li>Workout goal (workouts per week, minutes per workout)</li>
+    </ul>
+    <p>All of the above is stored exclusively in local storage on your device (Android Room/SQLite database and Jetpack DataStore Preferences). It is never transmitted to us or to any server, because no such server exists for this data.</p>
+
+    <h3>2.2 Health &amp; Fitness Data You Log</h3>
+    <p>As you use the app, it stores, again locally only:</p>
+    <ul>
+      <li>Food diary entries (food/meal logged, quantity, calories, and macronutrients)</li>
+      <li>Custom foods and custom meal slots you create</li>
+      <li>Weight entries over time</li>
+      <li>Water intake entries</li>
+      <li>Supplement entries (name, quantity, notes) — tracked for adherence only and never used in any calorie calculation</li>
+      <li>Milestones reached (e.g. weight or streak achievements)</li>
+    </ul>
+    <p>This is the most sensitive data the app handles, and it is the category we are most deliberate about: it never leaves your device unless you personally choose to export or share it yourself (for example, generating and sending a milestone image via your phone's own share sheet).</p>
+
+    <h3>2.3 Barcode Scan Data</h3>
+    <p>If you use the barcode scanner to look up a packaged food item, the app first checks its own local food database. If the item isn't already known locally, the app sends only the scanned barcode number (not your name, profile, or any other identifying information) to the public Open Food Facts database, along with a generic app identifier in the request header, to retrieve that product's nutrition facts. The returned nutrition data is then cached locally on your device so future scans of the same product work offline.</p>
+
+    <h3>2.4 Advertising &amp; Analytics Identifiers</h3>
+    <p>CalorieLogger displays ads through Google's AdMob (Google Mobile Ads SDK). To do this, Google Play services makes your device's Advertising ID and certain standard technical information (such as device type, general region, and app interaction events relevant to ad delivery and measurement) available to Google for the purpose of serving and measuring ads. This is standard behavior for any app using AdMob and is declared honestly in this app's Play Store "Data Safety" section as Device or other IDs — shared with the ad provider.</p>
+    <p>We do not receive, store, or have access to this advertising data ourselves — it is processed by Google according to Google's own Privacy Policy and, where applicable, Google's Ad Privacy settings.</p>
+
+    <h3>2.5 Purchase Information</h3>
+    <p>If you purchase the one-time "Remove Ads" upgrade, the transaction is handled entirely by Google Play Billing. We receive only a confirmation that your purchase was completed (so the app can unlock the ad-free state on your device) — we never see or store your payment method, card details, or billing address. Google's handling of payment information is governed by Google Play's Terms of Service and Google's own Privacy Policy.</p>
+
+    <h3>2.6 Information We Do NOT Collect</h3>
+    <p>To be explicit about what this app does not do:</p>
+    <ul>
+      <li>No account creation, no login, no email/phone collection by us</li>
+      <li>No cloud sync or backup of your food, weight, or health data (as of this version — see Section 8 if this ever changes)</li>
+      <li>No location tracking</li>
+      <li>No contacts, camera roll scanning, or microphone access beyond what's needed to pick/take a single profile photo when you choose to</li>
+      <li>No selling or renting of any personal data to third parties, ever</li>
+    </ul>
+
+    <h2>3. How We Use Information</h2>
+    <p>Data you enter is used solely to power the app's own features on your device: calculating your calorie/macro targets, showing your diary and progress, generating meal suggestions from your own recent logs, and tracking milestones. Because this data lives only on your device, "how we use it" is limited to what the app itself does locally — we do not separately process, analyze, or aggregate your data on any server, because there isn't one.</p>
+    <p>The Advertising ID and barcode number described above are used only for the specific, narrow purposes stated in Sections 2.4 and 2.3 respectively.</p>
+
+    <h2>4. Data Storage and Security</h2>
+    <ul>
+      <li>Structured data (food catalog, diary entries, weight, water, supplements, milestones) is stored in a local SQLite database via Android's Room persistence library.</li>
+      <li>Profile fields, goals, and app preferences are stored via Android Jetpack DataStore Preferences.</li>
+      <li>Your profile photo is stored as a local file in the app's private app-specific storage directory.</li>
+      <li>None of the above is encrypted with a separate key beyond standard Android app-sandboxing (each app's private storage is inaccessible to other apps without root access or your explicit OS-level backup/restore action).</li>
+      <li>Because there is no server, there is no remote database of user data that could be breached externally. The realistic security consideration is the security of your own device (e.g. using a device lock screen), since anyone with unlocked access to your phone could open the app the same way you do.</li>
+    </ul>
+
+    <h2>5. Third-Party Services Used by This App</h2>
+    <table>
+      <thead>
+        <tr><th>Service</th><th>Purpose</th><th>Data Involved</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Mobile Ads (AdMob) + User Messaging Platform (UMP)</td>
+          <td>Displays banner and interstitial ads; UMP handles consent (EEA/UK) before ads load</td>
+          <td>Advertising ID, general device/technical info (per Google's practices)</td>
+        </tr>
+        <tr>
+          <td>Google Play Billing</td>
+          <td>Processes the one-time "Remove Ads" purchase</td>
+          <td>Purchase confirmation only; payment details handled entirely by Google</td>
+        </tr>
+        <tr>
+          <td>Google Play Services</td>
+          <td>Underlying platform services (e.g. the on-device barcode scanner UI, Play Integrity where applicable)</td>
+          <td>Standard Play Services device interaction, per Google's practices</td>
+        </tr>
+        <tr>
+          <td>Open Food Facts</td>
+          <td>Public, open nutrition database used for barcode lookups</td>
+          <td>Scanned barcode number only (see Section 2.3)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Each of these operates under its own privacy policy:</p>
+    <ul>
+      <li>Google: policies.google.com/privacy</li>
+      <li>Open Food Facts: world.openfoodfacts.org/privacy</li>
+    </ul>
+
+    <h2>6. Data Sharing and Disclosure</h2>
+    <p>We do not sell, rent, or trade any user data. We do not share your food logs, weight history, health goals, or profile information with any third party, advertiser, or data broker — this data never reaches us in the first place, since it is stored only on your device.</p>
+    <p>The only data that is shared with a third party at all is: (a) the Advertising ID and standard ad-serving technical data shared with Google for showing ads (Section 2.4), and (b) the barcode number sent to Open Food Facts when you use the scanner (Section 2.3). Neither of these is linked to your name, your food diary contents, or any other identifying profile information by us.</p>
+    <p>We may disclose information if required to do so by law, but given we do not hold your health/food data on any server, there is generally nothing for us to disclose in response to such a request beyond confirming the app's data-collection design described here.</p>
+
+    <h2>7. Advertising Consent (EEA / UK Users)</h2>
+    <p>For users in the European Economic Area and the United Kingdom, the app uses Google's User Messaging Platform (UMP) to obtain your consent for personalized advertising before any ad request is made, in line with applicable consent frameworks. You can change your ad consent choices at any time via the in-app consent management option (if shown) or by resetting ad preferences through your device's Google Settings.</p>
+    <p>Users everywhere can also limit ad personalization at the device level via Settings → Google → Ads → Delete advertising ID / Opt out of Ads Personalization on Android, independent of this app.</p>
+
+    <h2>8. Data Backup and Google Drive (Not Currently Active)</h2>
+    <p>An optional, user-initiated Google Drive backup feature (exporting your profile, goals, weight history, and diary — excluding your profile photo — to a file in your own visible Google Drive) has been designed but is not currently built or available in this version of the app. If and when this feature is released, this Privacy Policy will be updated first to describe exactly what is uploaded, under what OAuth scope, and how you can delete it — and the feature will remain manual/opt-in only, never automatic or silent.</p>
+
+    <h2>9. Children's Privacy</h2>
+    <p>CalorieLogger is not directed at children and is not intended for use by children under the age of 13 (or the applicable minimum age in your jurisdiction). We do not knowingly collect personal information from children. Because the app has no account system and no data leaves the device (aside from the narrow exceptions above), there is no mechanism by which we would knowingly receive a child's personal data directly. If you believe a child has provided information through this app in a way that concerns you, please contact us at sgkslabs@gmail.com.</p>
+
+    <h2>10. Your Rights and Choices</h2>
+    <p>Because your data is stored locally:</p>
+    <ul>
+      <li>Access &amp; correction: You can view and edit any profile field, goal, or logged entry directly within the app at any time.</li>
+      <li>Deletion: You can delete individual entries, custom foods/supplements, or your entire local dataset by uninstalling the app (which removes its local storage per standard Android behavior) or by clearing the app's storage via Android Settings.</li>
+      <li>Ad personalization: Manage or opt out via your device's Google Ads settings (Section 7).</li>
+      <li>Purchase restoration: Use the in-app "Restore Purchases" option, which re-queries Google Play Billing directly — no separate request to us is needed.</li>
+      <li>Data-subject requests (GDPR/CCPA and similar): Because we do not hold a copy of your personal data on any server, most access/deletion requests are already satisfied by the local controls above. If you have a request beyond what these controls cover, email sgkslabs@gmail.com and we will respond within a reasonable time.</li>
+    </ul>
+
+    <h2>11. Data Retention</h2>
+    <p>Locally stored data persists on your device for as long as the app remains installed, or until you delete specific entries yourself. Uninstalling the app removes its locally stored data per standard Android app-storage behavior. We do not separately retain any copy of this data, since none is ever sent to us.</p>
+
+    <h2>12. International Users</h2>
+    <p>This app is available globally via Google Play. Where third-party services described in Section 5 (Google, Open Food Facts) process the limited data described above, that processing may occur on servers located outside your own country, under those providers' own privacy and security practices.</p>
+
+    <h2>13. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy if the app's features or data practices change (for example, if Google Drive backup in Section 8 is ever released). The "Last updated" date at the top will reflect the most recent revision. Material changes affecting how your data is handled will be reflected here before or at the time the corresponding feature ships. We encourage checking this page periodically.</p>
+
+    <h2>14. Contact Us</h2>
+    <p>Questions, concerns, or data-related requests about this Privacy Policy or the app:</p>
+    <ul>
+      <li>Email: sgkslabs@gmail.com</li>
+      <li>YouTube: SGKS Labs</li>
+    </ul>
+
+    <p class="policy-source">
+      Mirrored on sgkslabs.in for convenience. The canonical, always-current version of this policy —
+      the one registered with the Google Play listing — is hosted at
+      <a href="https://sites.google.com/view/calorielogger-privacy/home" target="_blank" rel="noopener noreferrer">sites.google.com/view/calorielogger-privacy</a>.
+    </p>
+
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> SGKS Labs</span>
+    <span class="footer-sep">·</span>
+    <span>sgkslabs.in</span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

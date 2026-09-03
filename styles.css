@@ -307,8 +307,121 @@ body {
 
 .footer-sep { color: var(--border); }
 
+/* ---------- policy docs ---------- */
+.policy-hero {
+  padding: 48px 24px 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.policy-back {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 22px;
+  transition: color 0.15s ease;
+}
+
+.policy-back:hover { color: var(--accent); }
+
+.policy-hero .app-tag { display: block; margin-bottom: 10px; }
+
+.policy-hero h1 {
+  font-size: clamp(24px, 4vw, 34px);
+  margin: 0 0 14px;
+  font-weight: 700;
+}
+
+.policy-meta {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--text-faint);
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.policy-doc {
+  padding: 40px 24px 72px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.policy-doc h2 {
+  font-size: 19px;
+  margin: 40px 0 14px;
+  color: var(--text);
+  border-top: 1px solid var(--border);
+  padding-top: 28px;
+}
+
+.policy-doc h2:first-child {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.policy-doc h3 {
+  font-size: 15.5px;
+  margin: 22px 0 10px;
+  color: var(--text);
+}
+
+.policy-doc p {
+  color: var(--text-dim);
+  font-size: 15px;
+  margin: 0 0 14px;
+}
+
+.policy-doc ul {
+  color: var(--text-dim);
+  font-size: 15px;
+  padding-left: 20px;
+  margin: 0 0 14px;
+}
+
+.policy-doc li { margin-bottom: 6px; }
+
+.policy-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  margin: 0 0 20px;
+  display: block;
+  overflow-x: auto;
+}
+
+.policy-doc th, .policy-doc td {
+  text-align: left;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}
+
+.policy-doc th {
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+
+.policy-source {
+  margin-top: 8px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+.policy-source a { color: var(--accent-dim); }
+
 @media (max-width: 560px) {
   .nav { gap: 16px; font-size: 13px; }
   .hero { padding: 56px 20px 44px; }
   .app-features { grid-template-columns: 1fr; }
+  .policy-doc { padding: 32px 20px 56px; }
 }
