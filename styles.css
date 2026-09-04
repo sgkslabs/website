@@ -253,11 +253,55 @@ body {
   color: var(--accent);
 }
 
-.app-links {
+.app-downloads {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   margin-top: auto;
+  padding-top: 4px;
+}
+
+.btn-store {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--accent-dim);
+  color: var(--bg);
+  background: var(--accent);
+}
+
+.btn-store:hover {
+  background: #4fe89c;
+  border-color: #4fe89c;
+}
+
+.btn-store-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.btn-store-disabled {
+  background: none;
+  border-color: var(--border);
+  color: var(--text-faint);
+  cursor: not-allowed;
+}
+
+.btn-store-disabled:hover {
+  background: none;
+  border-color: var(--border);
+}
+
+.app-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
   padding-top: 4px;
 }
 
@@ -270,12 +314,79 @@ body {
   border: 1px solid var(--border);
   color: var(--text-dim);
   transition: all 0.15s ease;
+  background: none;
+  cursor: pointer;
 }
 
 .btn-ghost:hover {
   color: var(--accent);
   border-color: var(--accent-dim);
   background: rgba(57, 217, 138, 0.06);
+}
+
+/* ---------- video modal ---------- */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.video-modal[hidden] { display: none; }
+
+.video-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 9, 14, 0.85);
+  backdrop-filter: blur(4px);
+}
+
+.video-modal-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+.video-modal-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.video-modal-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.video-modal-close:hover {
+  color: var(--accent);
+  border-color: var(--accent-dim);
 }
 
 /* ---------- about / contact ---------- */
