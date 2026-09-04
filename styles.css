@@ -64,6 +64,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: 64px;
 }
 
@@ -228,6 +229,7 @@ body {
   color: var(--text-dim);
   font-size: 14.5px;
   margin: 0;
+  overflow-wrap: anywhere;
 }
 
 .app-features {
@@ -410,6 +412,7 @@ body {
 
 .footer-inner {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   font-family: var(--mono);
   font-size: 12.5px;
@@ -486,6 +489,7 @@ body {
   color: var(--text-dim);
   font-size: 15px;
   margin: 0 0 14px;
+  overflow-wrap: anywhere;
 }
 
 .policy-doc ul {
@@ -493,6 +497,7 @@ body {
   font-size: 15px;
   padding-left: 20px;
   margin: 0 0 14px;
+  overflow-wrap: anywhere;
 }
 
 .policy-doc li { margin-bottom: 6px; }
@@ -511,6 +516,7 @@ body {
   padding: 8px 10px;
   border: 1px solid var(--border);
   color: var(--text-dim);
+  min-width: 120px;
 }
 
 .policy-doc th {
@@ -526,6 +532,7 @@ body {
   border-top: 1px solid var(--border);
   font-size: 13px;
   color: var(--text-faint);
+  overflow-wrap: anywhere;
 }
 
 .policy-source a { color: var(--accent-dim); }
@@ -535,4 +542,10 @@ body {
   .hero { padding: 56px 20px 44px; }
   .app-features { grid-template-columns: 1fr; }
   .policy-doc { padding: 32px 20px 56px; }
+}
+
+@media (max-width: 380px) {
+  .header-inner { row-gap: 8px; height: auto; padding: 10px 0; }
+  .nav { gap: 12px; font-size: 12px; }
+  .policy-meta { gap: 10px; font-size: 12px; }
 }
