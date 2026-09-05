@@ -34,7 +34,7 @@
     <span class="app-tag">android · nutrition tracking</span>
     <h1>CalorieLogger — Privacy Policy</h1>
     <p class="policy-meta">
-      <span>Last updated: 22 August 2026</span>
+      <span>Last updated: 5 September 2026</span>
       <span>Developer: SGKS Labs</span>
       <span>Contact: sgkslabs@gmail.com</span>
       <span>Package: com.sgkslabs.calorielogger</span>
@@ -75,10 +75,11 @@
       <li>Supplement entries (name, quantity, notes) — tracked for adherence only and never used in any calorie calculation</li>
       <li>Milestones reached (e.g. weight or streak achievements)</li>
     </ul>
-    <p>This is the most sensitive data the app handles, and it is the category we are most deliberate about: it never leaves your device unless you personally choose to export or share it yourself (for example, generating and sending a milestone image via your phone's own share sheet).</p>
+    <p>This is the most sensitive data the app handles, and it is the category we are most deliberate about: it never leaves your device automatically, and there is no export or backup feature. The only way any of it leaves is if you choose to share a milestone celebration card — tapping "share" on a weight or streak milestone renders an image containing that progress information and hands it to whichever app you pick from Android's share sheet (e.g. WhatsApp, Photos). We never see or receive that image.</p>
 
     <h3>2.3 Barcode Scan Data</h3>
     <p>If you use the barcode scanner to look up a packaged food item, the app first checks its own local food database. If the item isn't already known locally, the app sends only the scanned barcode number (not your name, profile, or any other identifying information) to the public Open Food Facts database, along with a generic app identifier in the request header, to retrieve that product's nutrition facts. The returned nutrition data is then cached locally on your device so future scans of the same product work offline.</p>
+    <p>Scanning uses your device's camera to read the barcode. The app does not capture, store, or transmit any photo or video from the camera — only the decoded barcode digits are used, as described above.</p>
 
     <h3>2.4 Advertising &amp; Analytics Identifiers</h3>
     <p>CalorieLogger displays ads through Google's AdMob (Google Mobile Ads SDK). To do this, Google Play services makes your device's Advertising ID and certain standard technical information (such as device type, general region, and app interaction events relevant to ad delivery and measurement) available to Google for the purpose of serving and measuring ads. This is standard behavior for any app using AdMob and is declared honestly in this app's Play Store "Data Safety" section as Device or other IDs — shared with the ad provider.</p>
@@ -87,13 +88,16 @@
     <h3>2.5 Purchase Information</h3>
     <p>If you purchase the one-time "Remove Ads" upgrade, the transaction is handled entirely by Google Play Billing. We receive only a confirmation that your purchase was completed (so the app can unlock the ad-free state on your device) — we never see or store your payment method, card details, or billing address. Google's handling of payment information is governed by Google Play's Terms of Service and Google's own Privacy Policy.</p>
 
-    <h3>2.6 Information We Do NOT Collect</h3>
+    <h3>2.6 Notifications</h3>
+    <p>If you enable meal-logging or weekly weigh-in reminders, the app requests notification permission (and, so reminders survive a device restart, permission to run at boot) in order to schedule these entirely on your device via Android's AlarmManager/WorkManager. These reminders are scheduled and delivered locally — no reminder content, schedule, or usage data is ever sent to us or to any server.</p>
+
+    <h3>2.7 Information We Do NOT Collect</h3>
     <p>To be explicit about what this app does not do:</p>
     <ul>
       <li>No account creation, no login, no email/phone collection by us</li>
       <li>No cloud sync or backup of your food, weight, or health data (as of this version — see Section 8 if this ever changes)</li>
       <li>No location tracking</li>
-      <li>No contacts, camera roll scanning, or microphone access beyond what's needed to pick/take a single profile photo when you choose to</li>
+      <li>No contacts or microphone access. Camera access is used only to read a barcode's digits (Section 2.3) or to let you pick/take a single profile photo when you choose to — no photo or video is captured, stored, or transmitted beyond those two explicit actions.</li>
       <li>No selling or renting of any personal data to third parties, ever</li>
     </ul>
 
