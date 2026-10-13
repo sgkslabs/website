@@ -34,7 +34,7 @@
     <span class="app-tag">android · salary &amp; payslip tracking</span>
     <h1>Salary Tracker — Privacy Policy</h1>
     <p class="policy-meta">
-      <span>Last updated: 12 October 2026</span>
+      <span>Last updated: 13 October 2026</span>
       <span>Developer: SGKS Labs</span>
       <span>Contact: sgkslabs@gmail.com</span>
       <span>Package: in.sgkslabs.salarytracker</span>
@@ -44,17 +44,18 @@
   <article class="policy-doc">
 
     <h2>1. Overview</h2>
-    <p>Salary Tracker ("the app") is a personal salary and payslip tracking app built to work entirely on your device. This policy explains what data the app handles, and the one optional feature that involves a third party: Google Drive backup.</p>
+    <p>Salary Tracker ("the app") is a personal salary and payslip tracking app built to work primarily on your device. This policy explains what data the app handles, the optional feature that involves a third party (Google Drive backup), the advertising shown to free users, and the one-time Premium purchase.</p>
 
     <h2>2. The Short Version</h2>
     <ul>
-      <li>We collect nothing. There is no backend server operated by the developer, no analytics, no advertising, and no tracking of any kind.</li>
+      <li>Your salary data — profile, heads, and every month's entered amounts — is never collected by us. There is no backend server operated by the developer that it is sent to.</li>
+      <li>The free version shows ads, served by Google AdMob; purchasing Premium removes them. See Section 5.</li>
       <li>Your salary data stays on your device unless you explicitly choose to back it up to your own Google Drive.</li>
       <li>No account or sign-in is required to use the app.</li>
     </ul>
 
     <h2>3. What Data the App Stores, and Where</h2>
-    <p>All the information you enter — your salary profile (currency, financial-year start month, pay day), the income and deduction heads you define, and every month's entered amounts — is stored locally in a private database on your device. This data stays there by default and is never visible to the developer.</p>
+    <p>All the information you enter — your salary profile (currency, financial-year start month, pay day), the income and deduction heads you define, and every month's entered amounts — is stored locally in a private database on your device. This data stays there by default and is never visible to the developer, and is never shared with the advertising or billing services described below.</p>
 
     <h2>4. Permissions the App Requests, and Why</h2>
     <table>
@@ -64,25 +65,33 @@
       <tbody>
         <tr>
           <td>Internet</td>
-          <td>Used only if you choose to connect Google Drive backup (see Section 5). Every other feature works fully offline.</td>
+          <td>Used to show ads (free version), process the optional Premium purchase, and if you choose to connect Google Drive backup (see Section 6). Core salary tracking works fully offline.</td>
+        </tr>
+        <tr>
+          <td>Advertising ID (AD_ID)</td>
+          <td>Used by Google AdMob to serve and measure ads in the free version (see Section 5). Not used, and not present, once Premium is purchased and ads are removed.</td>
         </tr>
       </tbody>
     </table>
-    <p>The app does not request access to your contacts, location, camera, SMS, call logs, or broad storage/file access. App Lock's optional fingerprint/face unlock uses Android's built-in biometric prompt directly — the app never sees or stores your biometric data itself.</p>
+    <p>The app does not request access to your contacts, location, SMS, call logs, or broad storage/file access. The camera permission is used only if you choose to take a new profile picture from Settings; it is never used anywhere else. App Lock's optional fingerprint/face unlock uses Android's built-in biometric prompt directly — the app never sees or stores your biometric data itself.</p>
 
-    <h2>5. Optional: Google Drive Backup</h2>
+    <h2>5. Advertising and Premium</h2>
+    <p>The free version of the app shows banner and occasional full-screen ads, served by <strong>Google AdMob</strong>. AdMob may collect your advertising ID and other device/usage information to select and measure ads, and to limit how often you see the same ad — this is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and, for ad personalization specifically, <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partner sites and apps</a>. None of your salary data is ever shared with AdMob or used to target ads. You can review or reset your advertising ID, and opt out of personalized ads, from your device's Settings → Google → Ads.</p>
+    <p>A one-time Premium purchase is available from within the app, processed entirely by <strong>Google Play Billing</strong> — the app never sees or stores your payment details (card number, UPI ID, etc.), only a purchase confirmation from Google Play. Premium removes all ads and unlocks the additional features listed on the app's Premium screen. Purchases are tied to your Google Play account and can be viewed or refunded through Google Play's own purchase history, subject to Google Play's refund policy.</p>
+
+    <h2>6. Optional: Google Drive Backup</h2>
     <p>If you choose to connect Google Drive from Settings, the app will:</p>
     <ul>
       <li>Ask you to grant access with your Google account, using Google's own account and consent screens (the app never sees or stores your Google password).</li>
       <li>Request access only to a hidden, app-specific storage area in your Drive (the <code>drive.appdata</code> scope) — it can never see, list, or access any other file in your Drive, and the backup file it creates is not visible in your own Drive interface at all.</li>
-      <li>Upload a backup of your salary profile, heads, and monthly entries only when you tap "Back Up Now" — there is no automatic or scheduled Drive upload.</li>
+      <li>Upload a backup of your salary profile, heads, and monthly entries when you tap "Back Up Now" or, if enabled, automatically shortly after you make a change.</li>
     </ul>
-    <p>This feature is entirely optional. If you never connect Google Drive, no data ever leaves your device. You can disconnect Google Drive backup at any time from Settings, which revokes the app's access immediately.</p>
+    <p>This feature is entirely optional. If you never connect Google Drive, no salary data ever leaves your device. You can disconnect Google Drive backup at any time from Settings, which revokes the app's access immediately.</p>
 
-    <h2>6. Local Backup and Export</h2>
+    <h2>7. Local Backup and Export</h2>
     <p>The app also lets you export a full backup to a file of your choosing at any time (Settings → Export Backup), and optionally keep the last 3 backups automatically on your device. Both stay entirely on your device unless you choose to move or share the exported file yourself — the app does not transmit it anywhere on its own.</p>
 
-    <h2>7. Data Retention and Deletion</h2>
+    <h2>8. Data Retention and Deletion</h2>
     <p>Since all data lives on your device, you control it directly:</p>
     <ul>
       <li>Deleting a month's entry, a salary head, or your salary profile in the app removes it immediately.</li>
@@ -90,13 +99,13 @@
       <li>Disconnecting Google Drive backup stops future backups; a backup already in your Drive's app-data storage is removed when you disconnect, or can be deleted by revoking the app's access from your Google Account settings.</li>
     </ul>
 
-    <h2>8. Children's Privacy</h2>
-    <p>The app does not knowingly collect personal information from anyone, including children, because it does not collect personal information at all — everything stays under the user's own control.</p>
+    <h2>9. Children's Privacy</h2>
+    <p>The app does not knowingly collect personal information from anyone, including children, because it does not collect personal information at all — everything stays under the user's own control. The app's ads are not configured to target children, consistent with Google AdMob's policies for apps not directed at children.</p>
 
-    <h2>9. Changes to This Policy</h2>
+    <h2>10. Changes to This Policy</h2>
     <p>If this policy changes, the updated version will be posted at this same page. We encourage checking it periodically.</p>
 
-    <h2>10. Contact Us</h2>
+    <h2>11. Contact Us</h2>
     <p>Questions, concerns, or data-related requests about this Privacy Policy or the app:</p>
     <ul>
       <li>Email: sgkslabs@gmail.com</li>
