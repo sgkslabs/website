@@ -91,7 +91,7 @@
 </header>
 
 <main>
-  <p class="updated"><strong>Last updated:</strong> October 31, 2026 &nbsp;·&nbsp; <strong>Developer:</strong> SGKSLabs (<a href="https://sgkslabs.in">sgkslabs.in</a>)</p>
+  <p class="updated"><strong>Last updated:</strong> November 2, 2026 &nbsp;·&nbsp; <strong>Developer:</strong> SGKSLabs (<a href="https://sgkslabs.in">sgkslabs.in</a>)</p>
 
   <div class="summary">
     <p>UNHOOK is designed to work entirely on your device. It has no server, no account system, and no third-party advertising or analytics SDKs. This policy explains exactly what the app accesses, why, and what it never does.</p>
@@ -111,15 +111,10 @@
   <h2>What UNHOOK accesses, and why</h2>
 
   <h3>Usage Access</h3>
-  <p>Used to read on-device, aggregate screen-time and app-usage statistics so the Home and Insights screens can show your real screen time and most-used apps. This data is read, displayed, and stored only in the local database on your device. It is never uploaded anywhere.</p>
-
-  <h3>Accessibility Service</h3>
-  <p>UNHOOK's Accessibility Service exists for exactly one purpose: detecting when you open an application you've chosen to restrict, so UNHOOK can show its intervention ("blocking") screen.</p>
+  <p>Used to read on-device, aggregate screen-time and app-usage statistics so the Home and Insights screens can show your real screen time and most-used apps, and to detect when you open an application you've chosen to restrict, so UNHOOK can show its intervention ("blocking") screen. This data is read, displayed, and stored only in the local database on your device. It is never uploaded anywhere.</p>
   <ul>
-    <li>It only inspects the identity (package name) of the app now in the foreground.</li>
-    <li>It cannot and does not read on-screen text, form fields, passwords, or any other screen content.</li>
-    <li>It never captures keystrokes.</li>
-    <li>It is not presented or usable as an accessibility tool for users with disabilities &mdash; its only purpose is restricted-app detection.</li>
+    <li>Restricted-app detection works by periodically checking which app is currently in the foreground &mdash; UNHOOK deliberately does not use an Accessibility Service for this, because many banking and payment apps refuse to run, or show a fraud warning, the moment any Accessibility Service is enabled on the device at all, regardless of what it does.</li>
+    <li>This never reads on-screen text, form fields, passwords, or any other screen content, and never captures keystrokes &mdash; it only ever learns the package name of the app currently in the foreground.</li>
   </ul>
 
   <h3>Notification Access</h3>
@@ -136,6 +131,9 @@
 
   <h3>Notifications (Android 13+)</h3>
   <p>Used only to show you local notifications you'd expect &mdash; e.g. "your temporary unlock just ended." These notifications are generated on-device and never involve a push-notification server.</p>
+
+  <h3>"Protection is active" notification</h3>
+  <p>While protection is turned on, Android requires UNHOOK to show a persistent, low-priority notification for the background service that watches for restricted-app launches. It carries no personal data &mdash; just a static "UNHOOK protection is active" message &mdash; and disappears the moment you turn protection off.</p>
 
   <h2>Data storage</h2>
   <p>All data UNHOOK creates &mdash; your restricted-app list, unlock history, screen-time snapshots, and settings &mdash; is stored locally on your device only. It is not backed up to the cloud, and is deleted completely if you uninstall the app, or immediately if you use Settings &rarr; Clear application data inside UNHOOK.</p>
