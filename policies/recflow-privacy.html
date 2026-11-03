@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REC FLOW Privacy Policy</title>
+<style>
+  :root {
+    --dark: #121214;
+    --mid: #B71C23;
+    --accent: #E8303A;
+    --light: #F6D9DA;
+    --cream: #FAF9F6;
+    --text: #1f1a1a;
+    --muted: #6b5f5f;
+    --gold: #D4AF37;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, var(--mid), var(--dark));
+    color: var(--cream);
+    padding: 48px 24px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  header p {
+    margin: 0;
+    color: var(--light);
+    font-size: 14px;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 24px 80px;
+  }
+  h2 {
+    color: var(--dark);
+    font-size: 20px;
+    margin-top: 40px;
+    border-bottom: 2px solid var(--light);
+    padding-bottom: 8px;
+  }
+  h3 {
+    color: var(--mid);
+    font-size: 16px;
+    margin-top: 24px;
+  }
+  p, li {
+    font-size: 15px;
+    color: var(--text);
+  }
+  ul {
+    padding-left: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid #e9dede;
+  }
+  th {
+    color: var(--mid);
+  }
+  .summary {
+    background: #fff;
+    border: 1px solid #ece3e3;
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-top: 24px;
+  }
+  .gold {
+    border-left-color: var(--gold);
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 13px;
+  }
+  a { color: var(--mid); }
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>REC FLOW</h1>
+  <p>Privacy Policy</p>
+</header>
+
+<main>
+  <p class="updated"><strong>Last updated:</strong> November 3, 2026 &nbsp;·&nbsp; <strong>Developer:</strong> SGKSLabs (<a href="https://sgkslabs.in">sgkslabs.in</a>)</p>
+
+  <div class="summary">
+    <p>REC FLOW records your screen entirely on your device. There is no account, no cloud upload, and no server that ever sees your recordings. This policy explains exactly what the app accesses, why, and what it never does.</p>
+  </div>
+
+  <h2>What REC FLOW does not do</h2>
+  <ul>
+    <li>No account creation, login, or sign-in of any kind.</li>
+    <li>No cloud storage or cloud upload. Recordings never leave your device unless <em>you</em> use the in-app Share action.</li>
+    <li>No automatic sharing of recordings.</li>
+    <li>No analytics or tracking of what you record, or of the contents of any recording.</li>
+    <li>No advertising SDKs.</li>
+    <li>No broad storage permission &mdash; REC FLOW uses Android's MediaStore API, which lets it save videos to your gallery without access to your other files.</li>
+  </ul>
+
+  <h2>What REC FLOW accesses, and why</h2>
+
+  <h3>Screen capture (MediaProjection)</h3>
+  <p>Required by Android to record your screen. Every single recording requires you to explicitly approve Android's own system consent dialog &mdash; REC FLOW cannot start a recording silently, cannot reuse a previous approval, and cannot bypass this dialog. Starting a recording from the floating bubble, a shake gesture, or the Quick Settings tile still shows you this same official Android confirmation screen first.</p>
+
+  <h3>Microphone</h3>
+  <p>Only requested, and only active, if you choose a microphone (or internal‑audio‑plus‑microphone) audio source in Settings. If you choose "No audio" or "Internal audio" alone, REC FLOW never touches the microphone.</p>
+
+  <h3>Display over other apps</h3>
+  <p>Only requested if you enable the floating recording control. Used solely to draw the small draggable bubble that lets you start/stop a recording with a double-tap; it does not read anything from other apps' windows.</p>
+
+  <h3>Notifications</h3>
+  <p>Used to show the ongoing recording status (with Pause/Resume/Stop actions) while a recording is active, and to let you know when a recording has finished saving, or when the free-plan 15-minute limit has been reached. These notifications are generated entirely on-device.</p>
+
+  <h3>Accelerometer (shake gesture)</h3>
+  <p>Only read while you've turned on the optional "shake to start/stop" gesture in Settings; reading stops immediately the moment you turn that setting off. No motion data is stored or transmitted &mdash; it's used only to detect a shake gesture in real time.</p>
+
+  <h2>Premium purchases</h2>
+  <p>If you choose to purchase REC FLOW Premium, the transaction is processed entirely by Google Play Billing. We receive a purchase token used solely to verify and unlock your entitlement; we never receive or store your payment details.</p>
+
+  <h2>Data storage</h2>
+  <p>Recordings are saved to the <code>Movies/REC FLOW</code> folder on your device via Android's MediaStore, visible in your Gallery/Photos app like any other video. Recording history metadata (filename, duration, resolution) is kept in a local, on-device database only. Nothing is backed up off-device by REC FLOW, and everything is removed if you delete a recording or uninstall the app.</p>
+
+  <h2>Children's privacy</h2>
+  <p>REC FLOW does not knowingly collect personal information from children, because it does not collect personal information off-device at all.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If REC FLOW's data practices ever change, this page will be updated and the "Last updated" date revised accordingly, before such a change ships.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be directed to SGKSLabs via <a href="https://sgkslabs.in">sgkslabs.in</a> or <a href="mailto:support@sgkslabs.in">support@sgkslabs.in</a>.</p>
+</main>
+
+<footer>
+  &copy; 2026 SGKSLabs. REC FLOW.
+</footer>
+
+</body>
+</html>
