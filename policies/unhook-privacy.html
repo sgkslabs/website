@@ -3,157 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UNHOOK Privacy Policy</title>
-<style>
-  :root {
-    --dark: #1B4332;
-    --mid: #2D6A4F;
-    --accent: #74C69D;
-    --light: #D8F3DC;
-    --cream: #FAF9F6;
-    --text: #1f2a24;
-    --muted: #5b6b63;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    background: var(--cream);
-    color: var(--text);
-    line-height: 1.6;
-  }
-  header {
-    background: linear-gradient(135deg, var(--mid), var(--dark));
-    color: var(--cream);
-    padding: 48px 24px;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0 0 8px;
-    font-size: 28px;
-    letter-spacing: 2px;
-  }
-  header p {
-    margin: 0;
-    color: var(--light);
-    font-size: 14px;
-  }
-  main {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 32px 24px 80px;
-  }
-  h2 {
-    color: var(--dark);
-    font-size: 20px;
-    margin-top: 40px;
-    border-bottom: 2px solid var(--light);
-    padding-bottom: 8px;
-  }
-  h3 {
-    color: var(--mid);
-    font-size: 16px;
-    margin-top: 24px;
-  }
-  p, li {
-    font-size: 15px;
-    color: var(--text);
-  }
-  ul {
-    padding-left: 20px;
-  }
-  .summary {
-    background: #fff;
-    border: 1px solid #e3ece6;
-    border-left: 4px solid var(--accent);
-    border-radius: 8px;
-    padding: 20px 24px;
-    margin-top: 24px;
-  }
-  .updated {
-    color: var(--muted);
-    font-size: 13px;
-  }
-  a { color: var(--mid); }
-  footer {
-    text-align: center;
-    padding: 24px;
-    color: var(--muted);
-    font-size: 13px;
-  }
-</style>
+<title>UnHook Privacy Policy — SGKS Labs</title>
+<meta name="description" content="Privacy Policy for UnHook, the digital detox and focus Android app by SGKS Labs.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
-<header>
-  <h1>UNHOOK</h1>
-  <p>Privacy Policy</p>
+<div class="scanline" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="../index.html#top" class="brand">
+      <span class="brand-glyph">&gt;_</span>
+      <span class="brand-text">sgkslabs<span class="dot">.</span>in</span>
+    </a>
+    <nav class="nav">
+      <a href="../index.html#apps">apps</a>
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+  </div>
 </header>
 
 <main>
-  <p class="updated"><strong>Last updated:</strong> November 2, 2026 &nbsp;·&nbsp; <strong>Developer:</strong> SGKSLabs (<a href="https://sgkslabs.in">sgkslabs.in</a>)</p>
 
-  <div class="summary">
-    <p>UNHOOK is designed to work entirely on your device. It has no server, no account system, and no third-party advertising or analytics SDKs. This policy explains exactly what the app accesses, why, and what it never does.</p>
-  </div>
+  <section class="policy-hero wrap">
+    <a href="../index.html#apps" class="policy-back">&larr; back to sgkslabs.in</a>
+    <span class="app-tag">digital detox &amp; focus</span>
+    <h1>UnHook — Privacy Policy</h1>
+    <p class="policy-meta">
+      <span>Last updated: November 2, 2026</span>
+      <span>Developer: SGKS Labs</span>
+      <span>Contact: support@sgkslabs.in</span>
+    </p>
+  </section>
 
-  <h2>What UNHOOK does not do</h2>
-  <ul>
-    <li>No account creation, login, or sign-in of any kind.</li>
-    <li>No cloud storage or cloud synchronization. There is no UNHOOK server.</li>
-    <li>No advertising SDKs.</li>
-    <li>No analytics or crash-reporting SDKs that transmit data off the device.</li>
-    <li>No <code>INTERNET</code> permission is declared in the app at all &mdash; UNHOOK cannot make a network request even if it tried to.</li>
-    <li>No collection of notification content, message text, or screen content.</li>
-    <li>No keystroke logging of any kind.</li>
-  </ul>
+  <article class="policy-doc">
 
-  <h2>What UNHOOK accesses, and why</h2>
+    <h2>1. Overview</h2>
+    <p>UnHook is designed to work entirely on your device. It has no server, no account system, and no third-party advertising or analytics SDKs. This policy explains exactly what the app accesses, why, and what it never does.</p>
 
-  <h3>Usage Access</h3>
-  <p>Used to read on-device, aggregate screen-time and app-usage statistics so the Home and Insights screens can show your real screen time and most-used apps, and to detect when you open an application you've chosen to restrict, so UNHOOK can show its intervention ("blocking") screen. This data is read, displayed, and stored only in the local database on your device. It is never uploaded anywhere.</p>
-  <ul>
-    <li>Restricted-app detection works by periodically checking which app is currently in the foreground &mdash; UNHOOK deliberately does not use an Accessibility Service for this, because many banking and payment apps refuse to run, or show a fraud warning, the moment any Accessibility Service is enabled on the device at all, regardless of what it does.</li>
-    <li>This never reads on-screen text, form fields, passwords, or any other screen content, and never captures keystrokes &mdash; it only ever learns the package name of the app currently in the foreground.</li>
-  </ul>
+    <h2>2. What UnHook Does Not Do</h2>
+    <ul>
+      <li>No account creation, login, or sign-in of any kind.</li>
+      <li>No cloud storage or cloud synchronization. There is no UnHook server.</li>
+      <li>No advertising SDKs.</li>
+      <li>No analytics or crash-reporting SDKs that transmit data off the device.</li>
+      <li>No <code>INTERNET</code> permission is declared in the app at all &mdash; UnHook cannot make a network request even if it tried to.</li>
+      <li>No collection of notification content, message text, or screen content.</li>
+      <li>No keystroke logging of any kind.</li>
+    </ul>
 
-  <h3>Notification Access</h3>
-  <p>Used only to suppress notifications from applications you've chosen to restrict, while protection is active. UNHOOK:</p>
-  <ul>
-    <li>Reads only the package name of an incoming notification to decide whether to cancel it.</li>
-    <li>Never reads, logs, or stores a notification's title, text, or any other content.</li>
-    <li>Stores only a per-app, per-day count of how many notifications were suppressed, for the Insights screen.</li>
-    <li>Immediately stops suppressing notifications for an app the moment it is unrestricted or protection is turned off.</li>
-  </ul>
+    <h2>3. What UnHook Accesses, and Why</h2>
 
-  <h3>Boot completion</h3>
-  <p>Used only to re-run light local housekeeping (clearing expired temporary unlocks, refreshing the day's screen-time snapshot) shortly after the device restarts.</p>
+    <h3>3.1 Usage Access</h3>
+    <p>Used to read on-device, aggregate screen-time and app-usage statistics so the Home and Insights screens can show your real screen time and most-used apps, and to detect when you open an application you've chosen to restrict, so UnHook can show its intervention ("blocking") screen. This data is read, displayed, and stored only in the local database on your device. It is never uploaded anywhere.</p>
+    <ul>
+      <li>Restricted-app detection works by periodically checking which app is currently in the foreground &mdash; UnHook deliberately does not use an Accessibility Service for this, because many banking and payment apps refuse to run, or show a fraud warning, the moment any Accessibility Service is enabled on the device at all, regardless of what it does.</li>
+      <li>This never reads on-screen text, form fields, passwords, or any other screen content, and never captures keystrokes &mdash; it only ever learns the package name of the app currently in the foreground.</li>
+    </ul>
 
-  <h3>Notifications (Android 13+)</h3>
-  <p>Used only to show you local notifications you'd expect &mdash; e.g. "your temporary unlock just ended." These notifications are generated on-device and never involve a push-notification server.</p>
+    <h3>3.2 Notification Access</h3>
+    <p>Used only to suppress notifications from applications you've chosen to restrict, while protection is active. UnHook:</p>
+    <ul>
+      <li>Reads only the package name of an incoming notification to decide whether to cancel it.</li>
+      <li>Never reads, logs, or stores a notification's title, text, or any other content.</li>
+      <li>Stores only a per-app, per-day count of how many notifications were suppressed, for the Insights screen.</li>
+      <li>Immediately stops suppressing notifications for an app the moment it is unrestricted or protection is turned off.</li>
+    </ul>
 
-  <h3>"Protection is active" notification</h3>
-  <p>While protection is turned on, Android requires UNHOOK to show a persistent, low-priority notification for the background service that watches for restricted-app launches. It carries no personal data &mdash; just a static "UNHOOK protection is active" message &mdash; and disappears the moment you turn protection off.</p>
+    <h3>3.3 Boot Completion</h3>
+    <p>Used only to re-run light local housekeeping (clearing expired temporary unlocks, refreshing the day's screen-time snapshot) shortly after the device restarts.</p>
 
-  <h2>Data storage</h2>
-  <p>All data UNHOOK creates &mdash; your restricted-app list, unlock history, screen-time snapshots, and settings &mdash; is stored locally on your device only. It is not backed up to the cloud, and is deleted completely if you uninstall the app, or immediately if you use Settings &rarr; Clear application data inside UNHOOK.</p>
+    <h3>3.4 Notifications (Android 13+)</h3>
+    <p>Used only to show you local notifications you'd expect &mdash; e.g. "your temporary unlock just ended." These notifications are generated on-device and never involve a push-notification server.</p>
 
-  <h2>Optional PIN</h2>
-  <p>If you choose to set a PIN to protect UNHOOK's settings from casual changes, the PIN itself is never stored. Only a salted, iterated cryptographic hash of it is stored locally &mdash; the original PIN cannot be recovered from that hash.</p>
+    <h3>3.5 "Protection Is Active" Notification</h3>
+    <p>While protection is turned on, Android requires UnHook to show a persistent, low-priority notification for the background service that watches for restricted-app launches. It carries no personal data &mdash; just a static "UnHook protection is active" message &mdash; and disappears the moment you turn protection off.</p>
 
-  <h2>Children's privacy</h2>
-  <p>UNHOOK does not knowingly collect data from anyone, of any age, because it does not collect data off-device at all.</p>
+    <h2>4. Data Storage</h2>
+    <p>All data UnHook creates &mdash; your restricted-app list, unlock history, screen-time snapshots, and settings &mdash; is stored locally on your device only. It is not backed up to the cloud, and is deleted completely if you uninstall the app, or immediately if you use Settings &rarr; Clear application data inside UnHook.</p>
 
-  <h2>Changes to this policy</h2>
-  <p>If UNHOOK's data practices ever change, this page will be updated and the "Last updated" date revised accordingly, before such a change ships.</p>
+    <h2>5. Optional PIN</h2>
+    <p>If you choose to set a PIN to protect UnHook's settings from casual changes, the PIN itself is never stored. Only a salted, iterated cryptographic hash of it is stored locally &mdash; the original PIN cannot be recovered from that hash.</p>
 
-  <h2>Contact</h2>
-  <p>Questions about this policy can be directed to SGKSLabs via <a href="https://sgkslabs.in">sgkslabs.in</a> or <a href="mailto:support@sgkslabs.in">support@sgkslabs.in</a>.</p>
+    <h2>6. Children's Privacy</h2>
+    <p>UnHook does not knowingly collect data from anyone, of any age, because it does not collect data off-device at all.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>If UnHook's data practices ever change, this page will be updated and the "Last updated" date revised accordingly, before such a change ships.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions about this policy can be directed to SGKS Labs via <a href="https://sgkslabs.in">sgkslabs.in</a> or <a href="mailto:support@sgkslabs.in">support@sgkslabs.in</a>.</p>
+
+  </article>
+
 </main>
 
-<footer>
-  &copy; 2026 SGKSLabs. UNHOOK.
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> SGKS Labs</span>
+    <span class="footer-sep">·</span>
+    <span>sgkslabs.in</span>
+  </div>
 </footer>
 
+<script src="../script.js"></script>
 </body>
 </html>
